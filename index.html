@@ -1,18 +1,186 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Surfing Project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1 class="btn btn-primary">Hello, world!</h1>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Surfing Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">The Surfing Project</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Le programme</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Nos prochaines sessions
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Septembre</a></li>
+              <li><a class="dropdown-item" href="#">Janvier</a></li>
+              <li><a class="dropdown-item" href="#">Mai</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- HEADER -->
+  <header>
+    <img src="surf-banner.jpg" class="img-fluid body-bg" style="filter: blur(2px);">
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <h1 class="text-center">
+        Partez à l'aventure
+      </h1>
+      <p class="text-center fs-5 text-nowrap">
+        Découvrez notre école de surf en peer-learning
+      </p>
+      <div class="d-flex gap-1">
+        <button type="button" class="btn btn-primary text-nowrap">
+          Je m'inscris à la prochaine session
+        </button>
+        <button type="button" class="btn btn-secondary disabled text-nowrap">
+          Je découvre le programme
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- FLEXBOX - 3 POINTS -->
+  <div class="p-5">
+    <h1 class="text-center p-4">
+      The Surfing Project en 3 points
+    </h1>
+    <div class="d-flex justify-content-between">
+      <div>
+        <img class="w-50 position-relative bottom-0 start-50 translate-middle-x" src="pas-chere.png" alt="">
+        <h1 class="text-center fs-3">
+          Pas chère
+        </h1>
+        <p class="px-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dicta quasi! Voluptatem sapiente neque pariatur quasi laudantium impedit optio libero eos quam distinctio? Voluptas maxime dolorem obcaecati temporibus officia autem.
+        </p>
+      </div>
+      <div>
+        <img class="w-50 position-relative bottom-0 start-50 translate-middle-x" src="relax.png" alt="">
+        <h1 class="text-center fs-3">
+          Relax
+        </h1>
+        <p class="px-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dicta quasi! Voluptatem sapiente neque pariatur quasi laudantium impedit optio libero eos quam distinctio? Voluptas maxime dolorem obcaecati temporibus officia autem.
+        </p>
+      </div>
+      <div>
+        <img class="w-50 position-relative bottom-0 start-50 translate-middle-x" src="communaute.png" alt="">
+        <h1 class="text-center fs-3">
+          La communauté
+        </h1>
+        <p class="px-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dicta quasi! Voluptatem sapiente neque pariatur quasi laudantium impedit optio libero eos quam distinctio? Voluptas maxime dolorem obcaecati temporibus officia autem.
+        </p>
+      </div>
+    </div>
+  </div>
+<!-- TEMOIGNAGES -->
+  <div class="p-5">
+    <h1 class="text-center p-4">
+      Témoignages
+    </h1>
+    <div class="d-flex w-100 justify-content-between">
+      <div class="card mb-3 w-50 mx-3 shadow-sm">
+        <img src="surf-1.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <p class="card-text">Surfing's not a sport, it's a way to life, it's no hobby. It's a way of looking at that wave and saying, "Hey bud, let's party!"</p>
+          <p class="card-text"><small class="text-body-secondary">Jeff, Avril 2019</small></p>
+        </div>
+      </div>
+      <div class="card mb-3 w-50 mx-3 shadow-sm">
+        <img src="surf-2.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <p class="card-text">Grâce à TSP je fais le tour du monde avec mon van et fais du surf ! Si l'expérience était à refaire je le referais plein de fois.</p>
+          <p class="card-text"><small class="text-body-secondary">Jean-Michel, Octobre 2018</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- PRIX -->
+   <div class="p-5">
+    <h1 class="text-center p-4">
+      Prix
+    </h1>
+    <div class="d-flex w-100 justify-content-between">
+      <div class="card w-50 mx-3 shadow-sm">
+        <div class="card-header text-center">
+          Semaine d'essai
+        </div>
+        <div class="card-body">
+          <h1 class="card-title text-center">0€</h1>
+          <p class="card-text text-center">
+            Le kiff <br>
+            à Bali <br>
+            Pendant 1 semaine  
+          </p>
+          <a href="#" class="btn btn-outline-primary w-100">S'inscrire</a>
+        </div>
+      </div>
+      <div class="card w-50 mx-3 shadow-sm">
+        <div class="card-header text-center">
+          Early Bird
+        </div>
+        <div class="card-body">
+          <h1 class="card-title text-center">15€</h1>
+          <p class="card-text text-center">
+            Le kiff <br>
+            à Bali <br>
+            Pendant 12 semaines
+          </p>
+          <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+        </div>
+      </div>
+      <div class="card w-50 mx-3 shadow-sm">
+        <div class="card-header text-center">
+          En trois fois
+        </div>
+        <div class="card-body">
+          <h1 class="card-title text-center">7€ <small class="text-body-secondary fs-3">/ mo</small></h1>
+          <p class="card-text text-center">
+            Le kiff <br>
+            à Bali <br>
+            Pendant 12 semaines
+          </p>
+          <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+        </div>
+      </div>
+    </div>
+   </div>
+  <!-- FOOTER -->
+   <footer class="px-5 py-3">
+      <p class="card-text"><small class="text-body-secondary">© Bootstrap, et The Surfing Project</small></p>
+   </footer>
+  <!-- SCRIPTSSS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
